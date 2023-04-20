@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="jquery/dist/jquery.min.js"></script>
+    <title>jQuery Tutorial</title>
+    <script>
+        // $(document).ready(function() {
+        //     alert("Hello!");
+        // });
+
+        //Shortcut form
+        // $(function() {
+        //     alert("Hello!");
+        // });
+
+        //Shortest form (using arrow function)
+        // $(() => alert("Hello!"));
+        $(() => {
+            // $('#btn1').on('click', e => {
+            //     // alert("you clicked me!")
+            //     // $('.mybox').show();
+            //     if($('.mybox').hasClass('red'))
+            //         $('.mybox').removeClass('red')
+            // });
+            // $('.mybox').on('click', e => {
+            //     // alert('you clicked my box!')
+            //     // $('.mybox').hide();
+            //     if(!$('.mybox').hasClass('red'))
+            //         $('.mybox').addClass('red')
+            // });
+            // $('.mybox').on('click', e => {
+            //     // alert('you clicked my box!')
+            //     // $('.mybox').hide();
+            //     $('.mybox').toggleClass('red')
+            // });
+            // $('#btn2').on('click', e => {
+            //     // $('.mybox').slideUp('slow');
+            //     $('.mybox').fadeOut();
+            // });
+            // $('#btn3').on('click', e => {
+            //     // $('.mybox').slideDown('fast');
+            //     // $('.mybox').slideDown(100);
+            //     $('.mybox').fadeIn();
+            // });
+            $('#btn1').on('click', e => {
+                // $('li').toggleClass('bold');
+                // $('li:first').toggleClass('bold');
+                // $('li:last').toggleClass('red');
+                // $('li:even').toggleClass('bold');
+                // $('li:odd').toggleClass('red');
+                // $('li:eq(3)').toggleClass('bold');
+                // $('li:nth-child(3)').toggleClass('red');
+                const randomIndex = Math.floor(Math.random() * 8);
+                const selectorStr = 'li:eq(' + randomIndex + ')';
+                $(selectorStr).toggleClass('bold');
+            })
+        });
+    </script>
+    <style>
+        .mybox {
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+        }
+        .red {
+            background-color: red;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Tutorial</h1>
+    <!-- <div class="mybox"></div> -->
+    <br>
+    <button id="btn1">Click me</button>
+    <!-- <br>
+    <button id="btn2">button 2</button>
+    <br>
+    <button id="btn3">button 3</button> -->
+    <ul>
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
+        <li>Item #4</li>
+        <li>Item #5</li>
+        <li>Item #6</li>
+        <li>Item #7</li>
+        <li>Item #8</li>
+    </ul>
+</body>
+</html>

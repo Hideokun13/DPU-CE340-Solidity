@@ -1,0 +1,24 @@
+truffle create contract Petshop
+
+test:
+    -truffle create test Petshop
+    - import petPrices.json
+    - uncomment account in contract (line 4)
+
+
+migration:
+    - create petPrices.json
+    - add Petshop and Petprices.json to deploy_contract 
+
+run-test:
+terminal #1 -> truffle develop
+terminal #2 -> truffle test -g Petshop
+
+//check each item are match
+array.every(callback func) -> run callback num of items in array 
+    return: 
+        - "false" if at least one round return false
+        - "true" if and only if all round return true
+
+src
+Download assets.zip in google classroom then extract a zip to under 'src' folder

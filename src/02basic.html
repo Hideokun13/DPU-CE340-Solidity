@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script src ="jquery/dist/jquery.min.js"></script>
+    <script src="web3/dist/web3.min.js"></script>
+    <script src="@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/02basic.js"></script>
+    <title>Basic DApp</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Basic DApp</h1>
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="param1" class="form-label">Parameter #1</label>
+                            <input type="number" class="form-control" id="param1">
+                        </div>
+                        <div class="col">
+                            <label for="param2" class="form-label">Parameter #2</label>
+                            <input type="number" class="form-control" id="param2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p id="result"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="addBtn">Add</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="subtBtn">Subt</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="multiplyBtn">Multiply</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="divideBtn">Divide</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <div>
+                        <h5>Excercise 14/2/2023</h5>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="param3" class="form-label">Enter number (use ',' to seperate numbers)</label>
+                            <input type="text" class="form-control" id="param3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p id="result2"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="sumBtn">Sum</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="minBtn">Min</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="maxBtn">Max</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="avgBtn">Average</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
