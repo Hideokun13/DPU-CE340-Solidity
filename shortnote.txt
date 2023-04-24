@@ -22,3 +22,28 @@ array.every(callback func) -> run callback num of items in array
 
 src
 Download assets.zip in google classroom then extract a zip to under 'src' folder
+
+Normal Mapping 1-D:
+table (address (key) | balance (value))
+mapping(address => uint)
+
+Mapping 2-D:
+table coordinate (2d) (axis x (uint) key 1 | axis y (uint) key 2 | axis z (bool) val)
+mapping(uint (x) => mapping(uint (y) => bool))
+
+Project:
+Powerpoint (Not PDF / Canvas) 20 Pages
+
+What's Expect in this PPT:
+-What
+-Technical (Function)
+-Example - Real Senario, Case Study 
+
+Topics:
+1. ERC20 + ERC223
+2. ERC-721 (NFT)
+3. ERC-809 (Renting)
+4. ERC-864 (NFT Shared Ownership)
+5. ERC-998 (Composable NFT)
+6. ERC-1155 (Multi-Token (FT + NFT))
+7. ERC-1190 NFR (Royalty)
